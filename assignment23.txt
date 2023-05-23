@@ -1,0 +1,607 @@
+Q1.Write a Java program to convert minutes into a number of years and days. Test Data Input 
+the number of minutes: 3456789 Expected Output : 3456789 minutes is approximately 6 
+years and 210 days.
+==>code
+package java23;
+import java.util.Scanner;
+public class Class {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.print("Enter Minutes : ");
+		long min=sc.nextLong();
+		
+		System.out.print(min +" minutes is approximately "+(min/525600)+ " Years " + ((min%525600/1440))+" Days");
+		
+	}
+}
+2.Prepare a basic calculator mechanism using a switch in java. AddiƟon, subtracƟon, 
+mulƟplicaƟon, division, squared.
+==>code
+package java23;
+import java.util.Scanner;
+public class divd {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter value of A : ");
+		int a=sc.nextInt();
+		System.out.print("Enter Operatation : ");
+		String o=sc.next();
+		System.out.print("Enter value of B : ");
+		int b=sc.nextInt();
+switch(o) {
+case "+":
+		System.out.print("Addatation of A and B is "+(a+b));
+	    break;
+case "-":
+	System.out.print("Substracation of A Abd B is "+(a-b));
+    break;
+case "*":
+	System.out.print("Multiplacatation of A Abd B is "+(a*b));
+    break;
+case "/":
+	System.out.print("Divatation of A Abd B is "+(a/b));
+    break;
+	}
+}
+}
+Q3.Find area of the triangle, rectangle, circle.
+==>code
+package java23;
+import java.util.Scanner;
+public class area {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner Sc=new Scanner(System.in);
+		
+		System.out.print("Enter Radious of circle ");
+		int radias=Sc.nextInt();
+		
+		float area=(float) ((3.14)*(radias*radias));
+		
+		System.out.println("Area of Circle is "+area);
+		
+		System.out.print("Enter height of recatangle ");
+		int height=Sc.nextInt();
+		System.out.print("Enter base of recatangle ");
+		int base=Sc.nextInt();
+		float rarea=(float) (base*height);
+		float tarea=(float) 0.5*(base*height);
+		
+		System.out.println("Area of Rectangle is "+rarea);
+		System.out.println("Area of Triangle is "+tarea);
+				
+
+	}
+
+}
+Q4.rint the below paƩern
+01234
+1234
+234
+34
+4
+==>code
+package java23;
+
+public class patteran020 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		for(int i=0;i<5;i++) {
+			for(int j=0;j<5;j++) {
+				if(i == j||i<j) {
+					System.out.print(j);
+				}
+			}
+			System.out.println();			
+		}		
+	}
+
+}
+Q5.Print the below paƩern
+ABCDE
+GHIJ
+MNO
+ST
+Y
+
+
+package java23;
+
+public class patteran020 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		char a=65;
+		
+		for(int i=0;i<5;i++) {
+			for(int j=0;j<5;j++) {
+				if(i == j||i<j) {
+					System.out.print(a);
+				}
+				a++;
+			}
+			System.out.println();			
+		}		
+	}
+
+}
+Q6.Write a Java program to calculate the average value of array elements.
+==>code
+package java23;
+
+public class Arrayl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int []array= {20,25,15};
+		int a=0;
+		for(int i=0;i<array.length;i++) {
+			a=array[i]+a;
+		}
+		System.out.println(a/array.length);
+		
+	}
+
+}
+Q7.Write a Java program to test if an array contains a specific value.
+==>code
+package java23;
+
+public class Arrayl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int []array= {20,25,15};
+		int a=0;
+		for(int i=0;i<array.length;i++) {
+			a=array[i]+a;
+		}
+		System.out.println(a/array.length);
+		
+	}
+
+}
+Q8.. Write a Java program to compute the average value of an array of integers except the largest 
+and smallest values
+==>code
+package java23;
+
+public class maxminarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int array[]= {52,26,55,85,20};
+		int max=array[0];
+		int min=array[0];
+		int a=0;
+		
+		for(int i=0;i<array.length;i++) {
+			
+			if(array[i]>max) {
+				max=array[i];
+			}
+			if(array[i]<min) {
+				min=array[i];
+			}
+			a=array[i]+a;
+		}	
+		a=a-max-min;
+		System.out.println(a/array.length);
+		}
+
+	}
+Q9.Write a Java program to calculate the average value of array elements
+==>code32qwer\uu\789\78887\87\8777\8\8
+package java23;
+
+public class Arrayl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int []array= {20,25,15};
+		int a=0;
+		for(int i=0;i<array.length;i++) {
+			a=array[i]+a;
+		}
+		System.out.println(a/array.length);		
+	}
+}
+Q10.Write a Java program to compute the average value of an array of integers except the largest 
+and smallest values
+==>code
+package java23;
+
+public class maxminarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int array[]= {52,26,55,85,20};
+		int max=array[0];
+		int min=array[0];
+		int a=0;
+		
+		for(int i=0;i<array.length;i++) {
+			
+			if(array[i]>max) {
+				max=array[i];
+			}
+			if(array[i]<min) {
+				min=array[i];
+			}
+			a=array[i]+a;
+		}	
+		a=a-max-min;
+		System.out.println(a/array.length);
+		}
+
+	}
+Q11. Write a java program to find the maximum number in an array. 
+==>code
+package java23;
+
+public class maxminarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int array[]= {52,26,55,85,20};
+		int max=array[0];
+		int min=array[0];
+		int a=0;
+		
+		for(int i=0;i<array.length;i++) {
+			
+			if(array[i]>max) {
+				max=array[i];
+			}
+			if(array[i]<min) {
+				min=array[i];
+			}
+			a=array[i]+a;
+		}	
+		a=a-max-min;
+		System.out.println(max);
+		System.out.println(min);
+		}
+
+	}
+Q12. Write a java program to find the maximum number in an array. 
+==>code
+package java23;
+
+public class maxminarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int array[]= {52,26,55,85,20};
+		int max=array[0];
+		int min=array[0];
+		int a=0;
+		
+		for(int i=0;i<array.length;i++) {
+			
+			if(array[i]>max) {
+				max=array[i];
+			}
+			if(array[i]<min) {
+				min=array[i];
+			}
+			a=array[i]+a;
+		}	
+		a=a-max-min;
+		System.out.println(max);
+		System.out.println(min);
+		}
+
+	}
+Q13.Write a java program to idenƟfy if a string is palindrome. Palindrome is a type of string which 
+when reversed is also the same Example: Bob 
+==>code
+Q14.Take the value of three sides of a triangle and idenƟfy if it is an equilateral, scalene, isosceles.
+==>code
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.print("Enter First side : ");
+		int sidea=sc.nextInt();
+		System.out.print("Enter Sceond side : ");
+		int sideb=sc.nextInt();
+		System.out.print("Enter Third side : ");
+		int sidec=sc.nextInt();
+
+		if(sidea==sideb&&sideb==sidec&&sidec==sidea){
+			System.out.println("It is equilateral");
+		 }else if(sidea==sideb&&sideb==sidec||sidec==sidea){
+		     System.out.println("It is isosceles triangel");
+		 }else{
+			 System.out.println("It is scalene triangel");
+		 }
+	}
+
+}
+Q15.. Sort an array of integers using Java
+==>code
+package java23;
+import java.util.Arrays;
+import java.util.Scanner;
+public class sortarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int array[]= {6,2,3,8,5,9,4};
+		Arrays.sort(array);
+		
+		for(int i=0;i<array.length;i++) {
+			System.out.println(array[i]);
+		}
+	}
+}
+Q16.Check if a array of integers contains only odd numbers?
+==>code
+package java23;
+
+import java.util.Arrays;
+
+public class oddnumberinarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int array[]= {6,2,3,8,5,9,4};
+		Arrays.sort(array);
+		
+		for(int i=0;i<=array.length;i++) {
+			if(array[i]%2!=0) {
+			System.out.println(array[i]);
+		}
+		}
+	}
+}
+Q17.if it has even numbers then print the even numbers in the arra
+==>code
+package java23;
+
+import java.util.Arrays;
+
+public class evennumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int array[]= {6,2,3,8,5,9,4};
+		Arrays.sort(array);
+		
+		for(int i=0;i<=array.length;i++) {
+			if(array[i]%2==0) {
+			System.out.println(array[i]);
+		}
+		}
+	}
+
+}
+Q18.How to merge two lists in java? Example: String1 = "mei hun gian" String2 = "mei hun bada 
+takatwar" Output = mei hun gian mei hun bada takatwar 
+==>code
+package java23;
+
+public class mergetwostrings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str="mei hun gian ";
+		String str1="mei hun bada takatwar";
+		
+		System.out.println(str.concat(str1));
+
+	}
+
+}
+Q19.Generate a random number in Java and check if it is a prime number. Random numbers are 
+generated using random method
+==>code
+package java23;
+import java.util.*;
+import java.io.*;
+
+public class randamprimeno {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random rand = new Random();
+		
+		
+		
+		int a=rand.nextInt(1000);
+		int b=0;
+		
+		for(int i=1;i<=a;i++) {
+			
+			if(a%i==0) {
+				b++;
+				System.out.println(a + " It is Factor of : " + i);
+			}
+		}
+		if(b==2) {
+			System.out.println(a + " number is Prime Number ");
+		}else {
+			System.out.println(a+ " number is not Prime number ");
+		}
+	}
+}
+Q20.Write a code to find the greatest two nos. 
+==>code
+package java23;
+
+public class gratest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.print(Math.max(25,56));
+	}
+
+}
+Q21. Write a code to test whether an entered no is + or – 
+
+==>code
+package java23;
+import java.util.Scanner;
+public class positiveornigative {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.print("Enter Number : ");
+		int a=sc.nextInt();
+		
+		if(a>0) {
+			System.out.print(a + " Number is positive");
+		}else {
+			System.out.print(a + " Number is Negatative");
+		}
+	}
+
+}
+Q22.Write a code that prints “True” when entered no is divisible by 10 and 12 both. 
+==>code
+package java23;
+import java.util.Scanner;
+public class divideby10and12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner (System.in);
+		
+		System.out.print("Enter number to be checked : ");
+		int a=sc.nextInt();
+		
+		if(a%10==0&&a%12==0) {
+			System.out.print("True");
+		}else {
+			System.out.print("false");
+		}
+		
+	}
+
+}
+Q23.Write a code that prints “ true “ if entered string Is equal to a predefined variable 
+e.g tr=”test” 
+entered string=”test” 
+“true”/false 
+==>code
+package java23;
+import java.util.Scanner;
+public class stringissameornot {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner (System.in);
+		
+		System.out.print("Enter String (xyz) : ");
+		String w=sc.nextLine();
+		String x="xyz";
+		int b=x.compareTo(w);
+		if(b==0) {
+			System.out.print("True");
+		}else {
+			System.out.print("False");
+		}
+		
+	}
+
+}
+Q24.Take an int input from user and return the negaƟon of that.
+E.g. 
+Input 3 -4 
+Output -3 4
+==>code
+ package java23;
+import java.util.Scanner;
+public class peintnegatice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.print("Enter Value : ");
+		int a=sc.nextInt();
+		if(a<0) {
+			System.out.print(-a);
+		}else {
+			System.out.print((-a));
+		}
+
+}
+}
+
+Q25.Take an input as char from the user and print its ASCII value. 
+==>code
+package java23;
+import java.util.Scanner;
+public class printchar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner (System.in);
+		
+		System.out.print("Enter Char : ");
+		char a=sc.nextLine().charAt(0);
+		
+		System.out.print((int)a);
+		
+	}
+
+}
+Q26.Take input as ASCII value from user ,if input is an valid ASCII value print its char valve. Else 
+print “invalid entry”. 
+==>code
+package java23;
+import java.util.Scanner;
+public class printcharf {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.print("Enter number : ");
+		int a= sc.nextInt();
+		
+		if(a>65&&a<122) {
+			System.out.print((char)a);
+		}else {
+			System.out.print("Invalid entry");
+		}
+		
+	}
+
+}
