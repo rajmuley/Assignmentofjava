@@ -1,0 +1,459 @@
+1) Write a java program to convert temp in Fahrenheit to Celsius 
+Sample o/p: 
+Convert temperature in Fahrenheit to Celsius: 
+Input the temp in fahrenheit:95 
+The temp in Fahrenheit: 95 
+The temp in Celsius: 35 
+
+==>code
+package classr;
+import java.util.Scanner;
+
+
+class temp{
+	static void far() {
+		Scanner sc =new Scanner(System.in);
+		System.out.print("Enter temp in fahrenheit :- ");
+		float fahrenheit=sc.nextFloat();
+		float Celsius ;
+		
+		Celsius=((fahrenheit-32)*5/9);
+		System.out.print(Celsius);
+	}
+	
+}
+
+public class celtof {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		temp change =new temp();
+		change.far();
+		
+
+	}
+
+Q2.Write a java program that cal. the volume of cube 
+Sample o/p: 
+Input the side of a cube: 5 
+The volume of a cube is : 125
+==>code
+package classr;
+
+
+
+public class volumeofcude {
+
+	static int cude(int a) {		
+		return (a*a*a);		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("the valume of cube is : " + cude(5));
+		System.out.println("the valume of cube is : " + cude(6));
+	}
+
+}
+Q3. Write a java program to find the third angle of triangle. 
+Sample output: 
+Find the third angle of triangle: 
+Input the 1st angle of the triangle: 30 
+Input the 2nd angle of the triangle: 60 
+The 3rd of the triangle is : 90 
+==>code
+package classr;
+import java.util.Scanner;
+class tri{
+	
+	public static void angle() {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter 1st Angel :- ");
+		int a=sc.nextInt();
+		System.out.print("Enter 2nd Angel :- ");
+		int b=sc.nextInt();		
+		int c=180-(a+b);
+		System.out.print("Enter 3rd Angel :- "+c);
+
+	}
+	
+}
+
+public class angel3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		tri k=new tri();
+		
+		k.angle();
+
+	}
+
+}
+Q4.Write a program to find factors of a no. 
+==>code
+package classr;
+
+public class factor {
+
+	static void fac() {
+		
+		int a=10;
+		
+		for(int i=1;i<=a;i++) {
+			if(a%i==0) {
+				System.out.print(i+" ");
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	fac();
+		
+	}
+
+}
+
+Q5.Write a program to sort an array in ascending order. 
+==>code
+
+package classr;
+import java.util.*;
+public class sortarray {
+
+	static void arra() {
+		int array[]= {6,3,9,4,52,10};
+		Arrays.sort(array);
+		for(int i=0;i<array.length;i++) {
+			System.out.print(" "+array[i]);			
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		arra();
+	}
+
+}
+Q6.Write a program to find average of array
+==>code
+package classr;
+import java.util.*;
+class avra{
+static void ar() {
+	int c=0;
+	int array[]= {2,6,8,5,3,1};
+	Arrays.sort(array);
+	
+	for(int i=0;i<array.length;i++) {
+		 c=array[i]+c;
+	}
+	
+	System.out.print("The avrage of array is : "+ (c/array.length));
+	
+}
+}
+public class avrage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		avra arv=new avra();
+		
+		arv.ar();
+		
+	}
+
+}
+Q7.Print first 30 even numbers and the total of them. 
+package classr;
+import java.util.*;
+public class lk {
+	
+	static void evensum(){
+		
+		
+		int a=30,b=0;
+
+		for(int i=0;i<=a;i++) {
+			
+			if(i%2==0) {
+				b=i+b;
+			}
+		}
+		System.out.println(b);
+
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		evensum();
+		
+	}
+
+}
+Q8.Prepare a basic calculator mechanism using a switch in java. AddiƟon, subtracƟon, 
+mulƟplicaƟon, division, squared
+
+package classr;
+import java.util.*;
+public class lk {
+	
+	static void cal(){
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter value of k : ");
+		int a=sc.nextInt();
+		System.out.print("Enter Operatation to be domr : ");
+		String o=sc.next();
+		System.out.print("Enter value of m : ");
+		int b=sc.nextInt();
+switch(o) {
+case "+":
+		System.out.print("Add of k and m is "+(a+b));
+	    break;
+case "-":
+	System.out.print("Subs of k Abd m is "+(a-b));
+    break;
+case "*":
+	System.out.print("Multi of k Abd m is "+(a*b));
+    break;
+case "/":
+	System.out.print("Div of k Abd m is "+(a/b));
+    break;
+	}
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		cal();
+	}
+}
+Q9.Write a program to change leƩer uppercase to lowercase and lowercase to uppercase. 
+==>code
+package classr;
+import java.util.*;
+public class ucaselcase {
+
+	static void uc() {
+		Scanner sc=new Scanner(System.in);
+		System.out.print(("Enter Strin in lower case : "));
+		String ucase=sc.nextLine();
+		System.out.print(ucase.toUpperCase());
+	}
+
+	static void lc() {
+		Scanner sc=new Scanner(System.in);
+		System.out.print(("Enter Strin in UPPER CASE : "));
+		String ucase=sc.nextLine();
+		System.out.print(ucase.toLowerCase());
+	}
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		uc();
+		lc();
+	}
+
+}
+
+Q10.enter a three nos from the user and make their avg
+==>code
+package classr;
+import java.util.*;
+public class add3no {
+
+	static int add() {
+		Scanner scc=new Scanner(System.in);
+		System.out.print("Enter value of A :- ");
+		int a=scc.nextInt();
+		System.out.print("Enter value of B :- ");
+		int b=scc.nextInt();
+		System.out.print("Enter value of C :- ");
+		int c=scc.nextInt();
+		System.out.print("Sum of A+B+C is :- ");
+		return ((a+b+c)/3);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.print(add());
+	}
+
+}
+Q11.Write a program to take any input 0 to 9 and prints all the possible combinaƟon that become 
+the no that is the input. 
+N=5 
+S=2
+package classr;
+
+class news{
+	
+	static void sun(int a) {
+		
+		for(int i=0;i<a;i++) {
+			for(int j=0;j<=i;j++) {
+				if(a==i+j) {
+					System.out.println(i+" "+j);
+				}
+			}
+		}
+		
+	}
+	
+}
+
+public class fum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		news n=new news();
+		
+		n.sun(8);
+		
+	}
+
+}
+Q12.sum of n odd number
+==>code
+package classr;
+import java.util.*;
+public class sumofoddnumber {
+
+	static void sum() {
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.print("Enter Number ; ");
+		int a=sc.nextInt();
+		int b=0;
+		
+		for(int i=1;i<=a;i+=2) {
+			b=b+i;
+
+		}
+		System.out.print("Sum of odd number till "+a+" :"+b);		
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		sum();
+	}
+
+}
+Q13.array print 2d using method
+==>code
+package classr;
+
+
+class arrays{
+	public static void array1() {
+	int arr0[]= {10,20,30};
+	int arr1[]= {40,50,60};
+	int arr2[]= {110,120,130};
+	int arr3[][]= {arr0,arr1,arr2};
+	
+	for(int i=0;i<arr3.length;i++) {
+		for(int j=0;j<arr3.length;j++) {
+			System.out.print(arr3[i][j]+" ");
+		}
+		System.out.println();
+	}
+	}
+	public static void array2() {
+	int arr0[]= {110,120,130};
+	int arr1[]= {401,150,160};
+	int arr2[]= {501,601,701};
+	int arr3[][]= {arr0,arr1,arr2};
+	
+	for(int i=0;i<arr3.length;i++) {
+		for(int j=0;j<arr3.length;j++) {
+			System.out.print(arr3[i][j]+" ");
+		}
+		System.out.println();
+	}
+	}
+	
+	
+}
+
+public class ayyar {
+
+	public static void main(String Args[]) {
+		arrays a= new arrays();
+		
+		System.out.println("First array is : ");
+		a.array1();
+		System.out.println("First array is : ");
+		a.array2();
+	}
+	
+}
+Q14.eligibal or nor
+==>code
+package classr;
+import java.util.*;
+public class agr {
+
+	
+	static void a(){
+		Scanner age=new Scanner(System.in);
+		System.out.print("Please Enter your year of birth : ");
+		int Age=age.nextInt();
+
+		int date =2023-Age;
+		System.out.print("your age is : "+date);
+		if(date>=18) {
+			System.out.print(" your Eligibal for vote");
+		}else {
+			System.out.print(" your not Eligibal for vote");
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		a();
+	}
+
+}
+Q15.Fibnocisserise
+==>code
+package classr;
+
+public class fibnaci {
+
+	static void fib(int d) {
+		int a=0;
+		int b=1;
+		int c=0;
+		
+		for(int i=0;i<=d;i++) {
+			a=b;
+			b=c;
+			c=a+b;
+		System.out.println(c);
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		fib(10);
+	}
+
+}
