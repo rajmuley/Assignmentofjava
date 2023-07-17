@@ -1,0 +1,184 @@
+Q1.repare a code to check the voters eligibility. Take a variable int age. if age is greater than 18 
+print. eligible else print  not eligible.
+==code
+package assignment22;
+import java.util.Scanner;
+public class voter { 
+	public static void main(String[] args) {
+		 TODO Auto-generated method stub
+
+		Scanner age=new Scanner(System.in);
+		System.out.print(Please Enter your year of birth  );
+		int Age=age.nextInt();
+
+		int date =2023-Age;
+		System.out.print(your age is  +date);
+		if(date=18) {
+			System.out.print( your Eligibal for vote);
+		}else {
+			System.out.print( your not Eligibal for vote);
+		}
+	}
+}
+Q2.Create a code to check the length of a string = Hi I’m learning in PFE, I will become a 
+developer. Now if the length is greater than 28 change the string to I will become a 
+developer. and print Successfully changed.
+==code
+package assignment22;
+import java.util.Scanner;
+public class changedata {
+
+	public static void main(String[] args) {
+		 TODO Auto-generated method stub
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.println(Enter the text  );
+		String str=sc.nextLine();
+		int leng = str.length();
+		String a,b,c;
+		if(leng=28) {
+			System.out.println(Successfully changed );
+		}else {
+			
+			System.out.println(I will become a developer);
+		}		
+		
+		System.out.print(Enter A String  );
+		a=sc.nextLine();
+		System.out.print(Enter B String  );
+		b=sc.nextLine();
+		
+		a=b;
+		b=c;
+		c=a;
+		
+		System.out.println(After switching the values  );
+		System.out.println(value of A is +a);
+		System.out.println(value of b is +b);
+	}
+}
+Q3.Change two strings with using third variable
+==code
+package assignment22;
+import java.util.Scanner;
+public class changetwostring {
+
+	public static void main(String[] args) {
+		 TODO Auto-generated method stub
+		
+		Scanner scan=new Scanner(System.in);
+		String a,b,c;
+		
+		System.out.print(Enter A String  );
+		a=scan.nextLine();
+		System.out.print(Enter B String  );
+		b=scan.nextLine();
+		
+		a=b;
+		b=c;
+		c=a;
+		
+		System.out.println(After switching the values  );
+		System.out.println(value of A is +a);
+		System.out.println(value of b is +b);
+	}
+}
+Q4....Change 2 strings without using third variable. 
+Q5.. Create a Java program to print your details, like name, address, phone number, blood group 
+etc. 
+==code
+package assignment22;
+public class printditals {
+
+	public static void main(String[] args) {
+		 TODO Auto-generated method stub
+		
+		String name=raj muley;
+		String address=Subhasg road beed-431122;
+		String bloodgroup=o+;
+		long phone=9405941894l;
+		System.out.println(name);
+		System.out.println(address);
+		System.out.println(bloodgroup);
+		System.out.println(phone);
+	}
+}
+Q6.Create a Java program to change the value of a given variable, for example a is iniƟalzed as 
+10 and make it to 20.
+==code
+package assignment22;
+
+public class change10to20 {
+
+	public static void main(String[] args) {
+		 TODO Auto-generated method stub
+		
+		int a=10;
+		System.out.println(value of a is   + a2);	
+	}
+}
+Q7.Write a Java program to print the sum of three numbers.
+==code
+package assignment22;
+import java.util.Scanner;
+public class sumof3numbers {
+
+	public static void main(String[] args) {
+		 TODO Auto-generated method stub
+		Scanner s= new Scanner(System.in);
+		int a,b,c;
+		System.out.print(Enter value of A  );
+		a=s.nextInt();
+		System.out.print(Enter value of B  );
+		b=s.nextInt();
+		System.out.print(Enter value of C  );
+		c=s.nextInt();
+		System.out.println(a+b+c);
+	}
+}
+Q8.Write a Java program to print square of a number. 
+==code
+import java.util.Scanner;
+public class Square {
+
+	public static void main(String[] args) {
+		 TODO Auto-generated method stub
+
+		Scanner b=new Scanner(System.in);
+		System.out.print(Enter number );
+
+		int a=b.nextInt();
+		
+		System.out.println(aa);
+		
+	}
+
+}
+Q9.Write a java program which iniƟalizes a variable name and greets with Hello , raj have a good 
+day
+==code
+package assignment22;
+
+public class addstring {
+
+	public static void main(String[] args) {
+		 TODO Auto-generated method stub
+		
+		String a=raj;
+		
+		System.out.println(Hello  + a+ have a good day);	
+	}
+}
+Q10.Try to understand what happens when type casƟng is done from char to int and int to char
+==code
+package assignment22;
+
+public class typecasting {
+
+	public static void main(String[] args) {
+		 TODO Auto-generated method stub
+		char b='a';
+		System.out.println( Typecasting is +((int) b));
+	}
+
+}
